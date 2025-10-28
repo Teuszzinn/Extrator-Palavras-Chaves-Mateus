@@ -2,10 +2,10 @@ const botaoMostraPalavras = document.querySelector("#botao-palavrachave");
 
 botaoMostraPalavras.addEventListener("click", MostraPalavrasChave);
 
-function MostraPalavrasChave() {
+function MostraPalavrasChave(){
     const texto = document.querySelector("#entrada-de-texto").value;
     const campoResultado = document.querySelector("#resultado-palavrachave");
-    const palavras = processaTexto(texto);
+    const palavrasChave = processaTexto(texto);
 
     campoResultado.textContent = palavrasChave.join(", ")
 }
@@ -69,3 +69,5 @@ return palavra;
 
 
 
+ocessaTexto(texto){
+    let palavra = texto.spl
