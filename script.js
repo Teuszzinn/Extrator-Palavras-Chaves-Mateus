@@ -5,10 +5,18 @@ botaoMostraPalavras.addEventListener("click", MostraPalavrasChave);
 function MostraPalavrasChave() {
     const texto = document.querySelector("#entrada-de-texto").value;
     const campoResultado = document.querySelector("#resultado-palavrachave");
-    const palavras = texto.split(" ");
+    const palavras = processaTexto(texto);
 
-    campoResultado.textContent=palavras.join(", ")
+    campoResultado.textContent = palavrasChave.join(", ")
 }
+
+
+function processaTexto(texto){
+    let palavra = texto.split(/\P{L}+/u)
+
+return palavra;
+}
+
 
 
 
