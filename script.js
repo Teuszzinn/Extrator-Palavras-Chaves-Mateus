@@ -50,7 +50,7 @@ function contaFrequencias(palavras) {
 
     }
 
-    return palavras;
+    return frequencias;
 }
 
 function tiraPalavrasRuins(palavras) {
