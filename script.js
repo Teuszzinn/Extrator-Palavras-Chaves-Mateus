@@ -16,17 +16,17 @@ function processaTexto(texto) {
     const frequencias = contaFrequencias(palavras);
     let ordenadas = Object.keys(frequencias).sort(ordenaPalavras);
 
-    function ordenaPalavras(p1, p2){
-        return frequencias [p2] - frequencias[p1]
+    function ordenaPalavras(p1, p2) {
+        return frequencias[p2] - frequencias[p1]
     }
-    return ordenadas.slice(0,10);
+    return ordenadas.slice(0, 10);
 
-    
+
 }
 
-function contaFrequencias(palavras){
+function contaFrequencias(palavras) {
 
-let frequencias = {};
+    let frequencias = {};
 
     for (let i of palavras) {
         frequencias[i] = 0;
@@ -40,3 +40,4 @@ let frequencias = {};
     }
 
     return palavras;
+}
