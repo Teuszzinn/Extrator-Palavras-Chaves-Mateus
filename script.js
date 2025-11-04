@@ -14,15 +14,15 @@ function processaTexto(texto) {
     let palavras = texto.split(/\P{L}+/u);
 
     const frequencias = contaFrequencias(palavras);
-    let ordenadas = Object.keys(frequencias).sort(oredernaPalavra)
+    let ordenadas = Object.keys(frequencias).sort(oredernaPalavra);
 
     function oredernaPalavra(p1, p2) {
-        return frequencia[p2] - frequencias[p1]
+        return frequencia[p2] - frequencias[p1];
 
     }
-    return ordenadas.slice(0.10)
+    return ordenadas.slice(0, 10);
 }
-funtion contaFrequencias(palavras){
+function contaFrequencias(palavras){
 
     let frequencias = {};
 
