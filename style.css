@@ -5,13 +5,11 @@
     --cor-gradiente-preto: linear-gradient(113deg, #000 0%, #1E2021 44.96%, #1E2022 100%);
 }
 
-
 * {
     margin: 0;
     padding: 0;
     font-family: Montserrat;
 }
-
 
 body {
     display: flex;
@@ -23,7 +21,6 @@ body {
     flex-direction: column;
 }
 
-
 .container {
     display: flex;
     width: 65rem;
@@ -33,7 +30,6 @@ body {
     overflow: hidden;
 }
 
-
 h1 {
     color: var(--cor-destaque);
     text-align: center;
@@ -41,9 +37,6 @@ h1 {
     font-weight: 600;
     text-transform: uppercase;
 }
-
-
-
 
 
 
@@ -59,14 +52,12 @@ h1 {
     font-size: 2rem;
 }
 
-
 #entrada-de-texto::placeholder {
     color: #828282;
     font-size: 2rem;
     font-weight: 400;
     line-height: normal;
 }
-
 
 #botao-palavrachave {
     display: flex;
@@ -83,7 +74,6 @@ h1 {
     line-height: normal;
 }
 
-
 #resultado-palavrachave {
     display: flex;
     border-radius: 0.625rem;
@@ -96,4 +86,3 @@ h1 {
     max-height: 50vh;
     overflow: auto;
 }
-
